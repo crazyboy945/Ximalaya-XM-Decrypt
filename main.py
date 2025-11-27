@@ -132,7 +132,7 @@ def xm_decrypt(raw_data):
 
 
 def find_ext(data):
-    exts = ["m4a", "mp3", "flac", "wav"]
+    exts = ["m4a", "mp3", "flac", "wav","mp4"]
     value = magic.from_buffer(data).lower()
     for ext in exts:
         if ext in value:
